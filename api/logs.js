@@ -23,7 +23,7 @@ export default async function handler(req, res) {
             <td>${r.a}</td>
             <td>${r.b}</td>
             <td>${r.result}</td>
-            <td>${new Date(r.created_at).toLocaleString('ko-KR')}</td>
+            <td>${new Date(r.created_at).toLocaleString('ko-KR', {timeZone: 'Asia/Seoul'})}</td>
           </tr>
         `).join('')}
       </table>
